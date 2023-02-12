@@ -1,0 +1,499 @@
+"NAME","POP"
+"Rovišće",5 262
+"Nova Rača",4 077
+"Đulovac",3 640
+"Kapela",3 516
+"Ivanska",3 510
+"Dežanovac",3 355
+"Veliki Grđevac",3 313
+"Veliko Trojstvo",3 092
+"Končanica",2 824
+"Hercegovac",2 791
+"Sirač",2 546
+"Štefanje",2 347
+"Velika Pisanica",2 151
+"Šandrovac",2 095
+"Berek",1 706
+"Velika Trnovitica",1 661
+"Severin",1 038
+"Zrinski Topolovac",1 000
+"Bjelovar",41 869
+"Daruvar",13 243
+"Garešnica",11 630
+"Čazma",8 895
+"Grubišno Polje",7 523
+"Vojnić",5 495
+"Josipdol",3 987
+"Netretić",3 333
+"Generalski Stol",3 199
+"Žakanje",3 193
+"Barilović",3 095
+"Draganić",2 950
+"Cetingrad",2 746
+"Rakovica",2 623
+"Plaški",2 292
+"Krnjak",2 164
+"Lasinja",1 938
+"Bosiljevo",1 486
+"Tounj",1 252
+"Saborsko",860
+"Ribnik",583
+"Karlovac",59 395
+"Ogulin",15 054
+"Duga Resa",12 114
+"Ozalj",7 932
+"Slunj",6 096
+"Slivno",2 078
+"Kula Norinska",1 926
+"Pojezerje",1 233
+"Zažablje",912
+"Metković",15 384
+"Ploče",10 834
+"Opuzen",3 242
+"Sveti Ivan Žabno",5 628
+"Virje",5 197
+"Sveti Petar Orehovec",5 137
+"Sokolovac",3 964
+"Rasinja",3 818
+"Kloštar Podravski",3 603
+"Novigrad Podravski",3 161
+"Peteranec",2 848
+"Legrad",2 764
+"Gola",2 760
+"Koprivnički Bregi",2 549
+"Molve",2 379
+"Koprivnički Ivanec",2 361
+"Drnje",2 156
+"Ferdinandovac",2 107
+"Gornja Rijeka",2 035
+"Đelekovec",1 824
+"Podravske Sesvete",1 778
+"Kalinovac",1 725
+"Kalnik",1 611
+"Hlebine",1 470
+"Novo Virje",1 412
+"Koprivnica",30 994
+"Križevci",22 324
+"Đurđevac",8 862
+"Bedekovčina",8 482
+"Sveti Križ Začretje",6 619
+"Marija Bistrica",6 612
+"Krapinske Toplice",5 744
+"Gornja Stubica",5 726
+"Hum na Sutli",5 476
+"Veliko Trgovišće",5 220
+"Đurmanec",4 481
+"Konjščina",4 074
+"Lobor",3 669
+"Radoboj",3 513
+"Desinić",3 478
+"Petrovsko",3 022
+"Zlatar-Bistrica",2 830
+"Budinščina",2 793
+"Stubičke Toplice",2 752
+"Mače",2 715
+"Mihovljan",2 234
+"Tuhelj",2 181
+"Kumrovec",1 854
+"Hrašćina",1 826
+"Kraljevec na Sutli",1 815
+"Jesenje",1 643
+"Zagorska Sela",1 197
+"Novi Golubovec",1 073
+"Krapina",12 950
+"Zabok",9 365
+"Pregrada",7 165
+"Zlatar",6 506
+"Oroslavje",6 253
+"Donja Stubica",5 930
+"Klanjec",3 234
+"Plitvička Jezera",4 668
+"Brinje",4 108
+"Perušić",3 494
+"Donji Lapac",1 880
+"Udbina",1 649
+"Lovinac",1 096
+"Karlobag",1 019
+"Vrhovine",905
+"Gospić",12 980
+"Otočac",10 411
+"Senj",8 132
+"Nedelišće",11 544
+"Mala Subotica",5 676
+"Sveti Juraj na Bregu",5 279
+"Donji Kraljevec",4 931
+"Podturen",4 392
+"Belica",3 509
+"Selnica",3 442
+"Kotoriba",3 333
+"Štrigova",3 221
+"Goričan",3 148
+"Sveti Martin na Muri",2 958
+"Pribislavec",2 929
+"Šenkovec",2 770
+"Orehovica",2 769
+"Strahoninec",2 728
+"Domašinec",2 459
+"Sveta Marija",2 433
+"Donja Dubrava",2 274
+"Vratišinec",2 213
+"Gornji Mihaljevec",2 046
+"Donji Vidovec",1 595
+"Dekanovec",832
+"Čakovec",30 455
+"Prelog",7 871
+"Mursko Središće",6 548
+"Kutjevo",7 472
+"Velika",5 888
+"Jakšić",4 437
+"Brestovac",4 028
+"Kaptol",4 007
+"Čaglin",3 386
+"Požega",28 201
+"Pleternica",12 883
+"Pakrac",8 855
+"Lipik",6 674
+"Matulji",10 544
+"Viškovo",8 907
+"Čavle",6 749
+"Jelenje",4 877
+"Lovran",3 987
+"Kostrena",3 897
+"Vinodolska",3 530
+"Ravna Gora",2 724
+"Klana",1 931
+"Fužine",1 855
+"Mošćenička Draga",1 641
+"Mrkopalj",1 407
+"Skrad",1 333
+"Lokve",1 120
+"Brod Moravice",985
+"Rijeka",144 043
+"Opatija",12 719
+"Crikvenica",11 348
+"Kastav",8 891
+"Bakar",7 773
+"Delnice",6 262
+"Vrbovsko",6 047
+"Novi Vinodolski",5 282
+"Kraljevica",4 579
+"Čabar",4 387
+"Popovača",12 701
+"Sunja",7 376
+"Lekenik",6 170
+"Dvor",5 742
+"Lipovljani",4 101
+"Martinska Ves",4 026
+"Gvozd",3 779
+"Topusko",3 219
+"Velika Ludina",2 831
+"Jasenovac",2 391
+"Hrvatska Dubica",2 341
+"Donji Kukuruzari",2 047
+"Majur",1 490
+"Sisak",52 236
+"Kutina",24 597
+"Petrinja",23 413
+"Novska",14 313
+"Glina",9 868
+"Hrvatska Kostajnica",2 746
+"Sibinj",7 549
+"Oriovac",6 559
+"Staro Petrovo Selo",6 352
+"Garčin",5 586
+"Rešetari",5 171
+"Nova Kapela",5 118
+"Donji Andrijevci",4 393
+"Cernik",4 235
+"Okučani",4 224
+"Vrpolje",4 023
+"Bebrina",3 541
+"Brodski Stupnik",3 526
+"Davor",3 259
+"Velika Kopanica",3 570
+"Oprisavci",2 942
+"Vrbje",2 906
+"Bukovlje",2 739
+"Sikirevci",2 707
+"Podcrkavlje",2 683
+"Slavonski Šamac",2 649
+"Gornja Vrba",2 559
+"Klakar",2 417
+"Gornji Bogićevci",2 319
+"Gundinci",2 294
+"Stara Gradiška",1 717
+"Dragalić",1 282
+"Slavonski Brod",64 612
+"Nova Gradiška",15 833
+"Podstrana",7 341
+"Dugi Rat",7 305
+"Otok",5 782
+"Podbablje",4 904
+"Seget",4 904
+"Marina",4 771
+"Proložac",4 510
+"Klis",4 367
+"Hrvace",4 116
+"Muć",4 074
+"Cista Provo",3 674
+"Gradac",3 615
+"Dugopolje",3 120
+"Baška Voda",2 924
+"Šestanovac",2 685
+"Dicmo",2 657
+"Runovići",2 643
+"Lovreć",2 500
+"Zmijavci",2 130
+"Brela",1 771
+"Tučepi",1 763
+"Zagvozd",1 642
+"Lokvičići",1 037
+"Primorski Dolac",839
+"Prgomet",797
+"Lećevica",740
+"Zadvarje",277
+"Split",188 694
+"Kaštela",34 103
+"Sinj",25 373
+"Solin",19 011
+"Omiš",15 472
+"Makarska",13 716
+"Trogir",8 540
+"Trilj",10 799
+"Imotski",10 213
+"Vrgorac",7 593
+"Supetar",3 889
+"Vrlika",2 705
+"Tisno",3 239
+"Kistanje",3 038
+"Primošten",2 992
+"Rogoznica",2 301
+"Bilice",2 180
+"Unešić",2 160
+"Pirovac",1 846
+"Ružić",1 775
+"Biskupija",1 669
+"Promina",1 317
+"Ervenik",988
+"Kijevo",533
+"Civljane",137
+"Šibenik",50 078
+"Knin",15 190
+"Vodice",9 407
+"Drniš",8 595
+"Skradin",3 986
+"Trnovec Bartolovečki",6 852
+"Maruševec",6 757
+"Cestica",5 678
+"Vidovec",5 539
+"Gornji Kneginec",5 259
+"Petrijanec",4 994
+"Bednja",4 765
+"Sračinec",4 714
+"Donji Martijanec",4 327
+"Sveti Đurđ",4 174
+"Vinica",3 747
+"Jalžabet",3 732
+"Sveti Ilija",3 532
+"Donja Voća",2 844
+"Mali Bukovec",2 507
+"Breznica",2 304
+"Beretinec",2 288
+"Klenovik",2 278
+"Ljubešćica",1 959
+"Visoko",1 641
+"Veliki Bukovec",1 578
+"Breznički Hum",1 575
+"Varaždin",49 075
+"Ivanec",14 434
+"Novi Marof",13 857
+"Lepoglava",8 718
+"Ludbreg",8 668
+"Varaždinske Toplice",6 973
+"Pitomača",10 465
+"Suhopolje",7 524
+"Špišić Bukovica",4 733
+"Gradina",4 485
+"Lukač",4 276
+"Čačinci",3 308
+"Sopje",2 750
+"Voćin",2 421
+"Čađavica",2 394
+"Zdenci",2 235
+"Nova Bukovica",2 096
+"Crnac",1 772
+"Mikleuš",1 701
+"Virovitica",22 618
+"Slatina",14 819
+"Orahovica",5 792
+"Ivankovo",8 676
+"Drenovci",7 424
+"Trpinja",6 466
+"Nijemci",5 998
+"Nuštar",5 862
+"Borovo",5 360
+"Stari Jankovci",5 216
+"Vrbanja",5 174
+"Gunja",5 033
+"Cerna",4 990
+"Bošnjaci",4 653
+"Babina Greda",4 262
+"Andrijaševci",4 249
+"Privlaka",3 776
+"Stari Mikanovci",3 387
+"Gradište",3 382
+"Tovarnik",3 335
+"Markušica",3 053
+"Jarmina",2 627
+"Bogdanovci",2 366
+"Tordinci",2 251
+"Vođinci",2 113
+"Tompojevci",1 999
+"Lovas",1 579
+"Negoslavci",1 466
+"Otok",7 755
+"Vinkovci",35 912
+"Vukovar",31 670
+"Županja",16 383
+"Ilok",8 351
+"Poličnik",4 664
+"Sveti Filip i Jakov",4 482
+"Sukošan",4 402
+"Bibinje",3 923
+"Gračac",3 923
+"Pakoštane",3 642
+"Posedarje",3 513
+"Ražanac",3 107
+"Novigrad",2 368
+"Privlaka",2 199
+"Stankovci",2 088
+"Zemunik Donji",1 903
+"Starigrad",1 893
+"Škabrnja",1 772
+"Polača",1 434
+"Jasenice",1 329
+"Galovac",1 190
+"Lišane Ostrovičke",764
+"Zadar",72 718
+"Benkovac",9 786
+"Biograd na Moru",5 259
+"Nin",4 603
+"Obrovac",3 387
+"Brdovec",10 287
+"Rugvica",7 608
+"Križ",7 406
+"Brckovljani",6 816
+"Bistra",6 098
+"Kloštar Ivanić",6 038
+"Dubrava",5 478
+"Klinča Sela",4 927
+"Jakovlje",3 952
+"Gradec",3 920
+"Pisarovina",3 697
+"Stupnik",3 251
+"Krašić",3 199
+"Pokupsko",2 492
+"Pušća",2 484
+"Orle",2 145
+"Farkaševac",2 102
+"Marija Gorica",2 089
+"Kravarsko",1 983
+"Preseka",1 670
+"Dubravica",1 586
+"Bedenica",1 522
+"Luka",1 419
+"Rakovec",1 350
+"Žumberak",1 185
+"Velika Gorica",63 517
+"Samobor",36 206
+"Zaprešić",23 125
+"Jastrebarsko",16 689
+"Sveti Ivan Zelina",16 268
+"Sveta Nedelja",15 506
+"Ivanić-Grad",14 723
+"Vrbovec",14 658
+"Dugo Selo",14 300
+"Medulin",6 004
+"Marčana",3 903
+"Raša",3 535
+"Žminj",3 447
+"Kršan",3 264
+"Fažana",3 050
+"Ližnjan",2 945
+"Sveta Nedelja",2 909
+"Barban",2 802
+"Vrsar",2 703
+"Svetvinčenat",2 218
+"Višnjan",2 187
+"Pićan",1 997
+"Tinjan",1 770
+"Cerovlje",1 745
+"Brtonigla",1 579
+"Tar-Vabriga",1 506
+"Karojba",1 489
+"Kanfanar",1 457
+"Gračišće",1 433
+"Sveti Lovreč",1 408
+"Kaštelir-Labinci",1 334
+"Vižinada",1 137
+"Bale",1 047
+"Sveti Petar u Šumi",1 011
+"Motovun",983
+"Oprtalj",981
+"Lupoglav",929
+"Funtana",831
+"Grožnjan",785
+"Lanišće",398
+"Pula",58 594
+"Poreč",17 460
+"Rovinj",14 234
+"Umag",12 901
+"Labin",12 426
+"Pazin",9 227
+"Buzet",6 059
+"Buje",5 340
+"Vodnjan",5 651
+"Novigrad",4 002
+"Čepin",12 901
+"Erdut",8 417
+"Đurđenovac",7 946
+"Darda",7 062
+"Bilje",5 480
+"Kneževi Vinogradi",5 186
+"Bizovac",4 979
+"Semeljci",4 858
+"Koška",4 411
+"Antunovac",3 559
+"Draž",3 356
+"Podgorač",3 314
+"Drenje",3 071
+"Petrijevci",3 068
+"Čeminac",2 856
+"Strizivojna",2 759
+"Petlovac",2 743
+"Marijanci",2 719
+"Satnica Đakovačka",2 572
+"Jagodnjak",2 537
+"Popovac",2 427
+"Feričanci",2 418
+"Viljevo",2 396
+"Magadenovac",2 239
+"Ernestinovo",2 225
+"Vladislavci",2 124
+"Viškovci",2 060
+"Šodolovci",1 955
+"Trnava",1 900
+"Donja Motičina",1 865
+"Punitovci",1 850
+"Gorjani",1 832
+"Podravska Moslavina",1 451
+"Vuka",1 312
+"Levanjska Varoš",1 266
+"Osijek",114 616
+"Đakovo",30 092
+"Našice",17 320
+"Valpovo",12 327
+"Belišće",11 786
+"Beli Manastir",10 986
+"Donji Miholjac",10 265
+"Zagreb",779 145

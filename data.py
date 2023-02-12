@@ -10,9 +10,12 @@ from tqdm import tqdm
 def generateSquareGraph(width, height, distance):
     '''Génère et retourne un graphe rectangulaire/carré de largeur "width" et hauteur "height".\n
     Chaque noeud est connecté au 8 noeuds dans chaque direction (sauf bordure).'''
+
+    # Génère une grille sur forme de graphe.
     graph = nx.grid_2d_graph(width, height)
     nx.set_edge_attributes(graph, values=distance, name='weight')
 
+    # Ajoute au graphe les arêtes en diagonale.
     graph.add_edges_from([
         ((x, y), (x + 1, y + 1))
         for x in range(width - 1)
@@ -41,10 +44,10 @@ def deleteIslands(dfCountry):
 
 def scaleCoordinate(x, y, dfCountry, distance):
     '''Transforme et retourne les coordonnées en CRS actuel en l'equivalent dans le graphe.'''
-    minX, minY, maxX, maxY = map(int, dfCountry.geometry.bounds.iloc[0])
+    minX, minY, _, _ = map(int, dfCountry.geometry.bounds.iloc[0])
     return ((x - minX) // distance, (y - minY) // distance)
 
-def getGraph(dfCountry, distance, countryName):
+def getGraph(dfCountry, distance, countryName=''):
     '''Retourne un graphe où chaque point est compris dans le "dfCountry".\n
     Sauvegarde le graphe à l'emplacement [./graph/nom.gexf] pour une prochaine lecture.'''
     if os.path.exists(f"./graph/{countryName.lower()}_{distance}.gexf"):
@@ -53,6 +56,7 @@ def getGraph(dfCountry, distance, countryName):
     minX, minY, maxX, maxY = map(int, dfCountry.geometry.bounds.iloc[0])
     width, height = ((maxX - minX + 1) // distance, (maxY - minY + 1) // distance)
 
+    # Génère une grille de points (géographiques) ou chaque point est à la même position d'un noeud du futur graphe.
     points = gpd.GeoDataFrame(
         {'geometry': 
             [Point(minX + x * distance, minY + y * distance)
@@ -61,6 +65,7 @@ def getGraph(dfCountry, distance, countryName):
         }, crs=dfCountry.crs
     )
 
+    # Génère un rectangle qui englobe tout le pays.
     square = gpd.GeoDataFrame(
         geometry=[Polygon([
             [minX, minY],
@@ -70,6 +75,7 @@ def getGraph(dfCountry, distance, countryName):
         ])],
     crs=dfCountry.crs)
 
+    # Récupère tout les points en dehors du pays.
     inverted_dfCountry = square.overlay(dfCountry, how='difference')
     points = points.overlay(inverted_dfCountry, how='intersection')
 
@@ -78,7 +84,9 @@ def getGraph(dfCountry, distance, countryName):
     for point in tqdm(points['geometry'], desc="Removing nodes outside our dataframe"):
         graph.remove_node(((point.x - minX) // distance, (point.y - minY) // distance))
 
-    nx.write_gexf(graph, f"./graph/{countryName.lower()}_{distance}.gexf")
+    # Enregistre le graphe.
+    if (countryName != ''):
+        nx.write_gexf(graph, f"./graph/{countryName.lower()}_{distance}.gexf")
     return graph
 
 def shortest_path(graph, source, target, dfCountry, distance):
@@ -93,7 +101,8 @@ def pathOptimization(path, dfCountry, distance):
     Retourne le "path" optimisé sous forme de dict {point: distance par rapport au point précédent en mètre}.'''
     pbar = tqdm(total = len(path) - 1, desc="Path optimization")
 
-    minX, minY, maxX, maxY = map(int, dfCountry.geometry.bounds.iloc[0])
+    # On récupère les frontières du pays pour faire des intersections par la suite avec diagonales testées.
+    minX, minY, _, _ = map(int, dfCountry.geometry.bounds.iloc[0])
     dfCountry['geometry'] = dfCountry['geometry'].boundary
 
     indexNode = 0
@@ -106,7 +115,7 @@ def pathOptimization(path, dfCountry, distance):
 
         maxDistance = 0
         nextNode = path[indexNode]
-        actualIndexNode = indexNode
+        indexNodeBeforeLoop = indexNode
         for subIndexNode, currentNode in enumerate(path[indexNode:]):
             line = gpd.GeoDataFrame(
                 geometry=[LineString([
@@ -114,16 +123,18 @@ def pathOptimization(path, dfCountry, distance):
                     (minX + currentNode[0] * distance, minY + currentNode[1] * distance)])],
                 crs=dfCountry.crs)
 
+            # Intersection de la frontière avec la diagonale.
             join = gpd.sjoin(line, dfCountry, predicate='intersects')
             if list(join.geometry):
                 continue
             
+            # Calcul la distance euclidienne entre les deux extrémités de la diagonale.
             dist = line.boundary.iloc[0].geoms[0].distance(line.boundary.iloc[0].geoms[1])
             if maxDistance < dist:
                 maxDistance = dist
                 nextNode = currentNode
-                indexNode = actualIndexNode + subIndexNode
-        pbar.update(indexNode - actualIndexNode)
+                indexNode = indexNodeBeforeLoop + subIndexNode
+        pbar.update(indexNode - indexNodeBeforeLoop)
         distPath.append(maxDistance)
         newPath.append(nextNode)
     return {node: dist for node, dist in zip(newPath, distPath)}
