@@ -22,9 +22,10 @@ def drawPath(path, pathLength, dfCountry, distance, countryName):
                 (minX + edge[0][0] * distance, minY + edge[0][1] * distance),
                 (minX + edge[1][0] * distance, minY + edge[1][1] * distance)])],
             crs=dfCountry.crs)
-        line.plot(ax=ax, color="black")
+        line.plot(ax=ax, color='black')
 
     plt.title(f"Shortest path in {countryName}\nDistance : ~ {round(pathLength / 1000, 3)} km")
+    plt.axis('off')
     plt.show()
 
 def drawPathInGraph(path, pathLength, graph, dfCountry, distance, countryName):
@@ -40,9 +41,10 @@ def drawPathInGraph(path, pathLength, graph, dfCountry, distance, countryName):
     _, ax = plt.subplots()
     dfCountry.plot(ax=ax)
 
-    nx.draw(graph, pos=pos, ax=ax, node_color='black')
-    nx.draw_networkx_nodes(graph, pos, nodelist=path, node_color='r')
-    nx.draw_networkx_edges(graph, pos, edgelist=path_edges, edge_color='r', width=10)
+    nx.draw(graph, pos=pos, ax=ax, node_color='black', node_size=5)
+    nx.draw_networkx_nodes(graph, pos, nodelist=path, node_color='r', node_size=5)
+    nx.draw_networkx_edges(graph, pos, edgelist=path_edges, edge_color='r', width=3)
 
     plt.title(f"Shortest path in {countryName}\nDistance : ~ {round(pathLength / 1000, 3)} km")
+    plt.axis('off')
     plt.show()
