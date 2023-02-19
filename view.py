@@ -14,13 +14,11 @@ def drawPath(path, pathLength, dfCountry, distance, countryName):
     _, ax = plt.subplots()
     dfCountry.plot(ax=ax)
 
-    plt.scatter(minX + path[0][0] * distance, minY + path[0][1] * distance, color='red')
-    plt.scatter(minX + path[-1][0] * distance, minY + path[-1][1] * distance, color='red')
+    plt.scatter(*path[0], color='red')
+    plt.scatter(*path[-1], color='red')
     for edge in path_edges:
         line = gpd.GeoDataFrame(
-            geometry=[LineString([
-                (minX + edge[0][0] * distance, minY + edge[0][1] * distance),
-                (minX + edge[1][0] * distance, minY + edge[1][1] * distance)])],
+            geometry=[LineString([edge[0], edge[1]])],
             crs=dfCountry.crs)
         line.plot(ax=ax, color='black')
 
@@ -36,7 +34,7 @@ def drawPathInGraph(path, pathLength, graph, dfCountry, distance, countryName):
         return 
     
     path_edges = list(zip(path, path[1:]))
-    pos = {node:(minX + distance * node[0], minY + distance * node[1]) for node in graph.nodes}
+    pos = {node: node for node in graph.nodes}
 
     _, ax = plt.subplots()
     dfCountry.plot(ax=ax)
