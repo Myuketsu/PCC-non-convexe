@@ -26,7 +26,7 @@ def drawPath(path, pathLength, dfCountry, distance, countryName):
     plt.axis('off')
     plt.show()
 
-def drawPathInGraph(path, pathLength, graph, dfCountry, distance, countryName):
+def drawPathInGraph(path, pathLength, graph, dfCountry, countryName):
     '''Dessine le "path" dans le "graph" sur le calque "dfCountry".'''
     minX, minY, _, _ = map(int, dfCountry.geometry.bounds.iloc[0])
     if not isinstance(path, list):
